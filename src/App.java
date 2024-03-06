@@ -21,5 +21,12 @@ public class App {
         } while (resposta.equalsIgnoreCase("s")); //(valorLido!=9999); 
         System.out.println("Quantidade de números positivos:"+contPositivos);
         System.out.println("Quantidade de números negativos:"+contNegativos);
+        int totalValores = contNegativos+contPositivos+contZeros;
+        porcentagemNegativos = contNegativos*100/totalValores;
+        porcentagemPositivos = contPositivos*100/totalValores;
+        System.out.println("Porcentagem de números positivos:"+porcentagemPositivos);
+        System.out.println("Porcentagem de números negativos:"+porcentagemNegativos);
+        System.out.println("Os números positivos digitados foram:");
+        System.out.println("Os números negativos digitados foram:");
     }
 }
